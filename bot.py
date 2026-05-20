@@ -36,4 +36,6 @@ def echo(message):
     bot.send_message(message.chat.id, javob)
 
 print("Bot ishga tushdi...")
+# Webhookni o'chirish va pollingni boshlash
+bot.remove_webhook()
 bot.polling(none_stop=True)
