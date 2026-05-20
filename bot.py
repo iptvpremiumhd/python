@@ -10,8 +10,7 @@ def malumotni_oqi():
         try:
             with open('zapravkalar.txt', 'r', encoding='utf-8') as f:
                 return json.load(f)
-        except Exception as e:
-            print(f"Xatolik: {e}")
+        except Exception:
             return []
     return []
 
